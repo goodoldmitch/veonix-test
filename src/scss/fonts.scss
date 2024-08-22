@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Muller-Trial-Regular';
+    src: url('../fonts/Muller-Trial-Regular.woff2') format('woff2'),
+         url('../fonts/Muller-Trial-Regular.woff') format('woff');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller-Trial-Medium';
+    src: url('../fonts/Muller-Trial-Medium.woff2') format('woff2'),
+         url('../fonts/Muller-Trial-Medium.woff') format('woff');
+         
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller-Trial-ExtraBold';
+    src: url('../fonts/Muller-Trial-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Muller-Trial-ExtraBold.woff') format('woff');
+         
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Etna';
+    src: url('../fonts/etna-free-font.woff2') format('woff2'),
+         url('../fonts/etna-free-font.woff') format('woff');
+         
+    font-weight: 800;
+    font-style: normal;
+}

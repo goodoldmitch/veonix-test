@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 // Пути к исходным и выходным файлам
 const paths = {
   styles: {
-    src: 'src/scss/**/*.scss',
+    src: 'src/scss/main.scss',
     dest: 'dist/css/'
   },
   scripts: {

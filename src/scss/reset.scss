@@ -1,0 +1,52 @@
+/* reset.scss */
+
+/* Сбрасываем отступы, поля и размеры шрифтов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Сбрасываем стили для заголовков */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+  
+  /* Сбрасываем стили для списков */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Сбрасываем стили для изображений */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Сбрасываем стили для ссылок */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Сбрасываем стили для таблиц */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Сбрасываем стили для кнопок и форм */
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    appearance: none;
+  }
+  

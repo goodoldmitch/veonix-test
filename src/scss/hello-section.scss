@@ -1,0 +1,197 @@
+@import 'variables.scss';
+
+.hello-section{
+    display: flex;
+    background-color: $color-dark-primary;
+    overflow: hidden;
+
+    &-left{
+        width: 70%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+
+        &-wrapper{
+            width: 66%;
+            margin: 0 auto;
+            padding-top: 24px;
+
+            .logo{
+                width: 74%;
+            }
+
+            .subtitle{
+                font-family: $font-primary-extrabold;
+                font-size: 1.14vw;
+                color: $color-light-primary;
+                text-transform: uppercase;
+                margin-top: 3.38vw;
+
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 62%;
+                    height: 1px;
+                    background: $color-light-primary;
+                    vertical-align: middle;
+                    margin-left: 15px;
+                }
+            }
+
+            h1{
+                font-family: $font-primary-extrabold;
+                font-size: 5.72vw;
+                line-height: 1.07;
+                text-transform: uppercase;
+                color: $color-light-primary;
+                margin-top: 3.9vw;
+            }
+
+            .description{
+                font-size: 1.4vw;
+                color: $color-light-primary;
+                margin-top: 1.35vw;
+            }
+
+            .button{
+                margin-top: 3.95vw;
+
+                &:hover{
+                    color: $color-light-primary;
+                    background-color: $color-dark-secondary;
+                }
+            }
+
+            .scroll-down{
+                display: block;
+                width: 1.45vw;
+                margin-top: 1.45vw;
+                margin-left: 10.15vw;
+
+                @include scroll-down-animation(10px, 1.5s);
+            }
+        }
+    }
+
+    &-right{
+        width: 30%;
+        height: 100%;
+        padding: 1.87vw 2.91vw 0 2.91vw;
+
+        .contact-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 1.66vw;
+            }
+
+            a{
+                font-family: $font-secondary;
+                font-size: 1.09vw;
+                color: $color-light-secondary;
+            }
+        }
+
+        .slider{
+
+            &-controls{
+                margin-top: 4.27vw;
+                text-align: right;
+
+                
+
+                button{
+                    &:first-child{margin-right: 1.45vw;}
+
+                    img{
+                        width: 2.29vw;
+                    }
+                }
+            }
+
+            &-viewport-1{
+                margin-top: 4.37vw;
+
+                .slide{
+                    display: none;
+                    width: 100%;
+
+                    &.active{
+                        display: block;
+                    }
+
+                    .number{
+                        font-family: $font-secondary;
+                        font-size: 2.7vw;
+                        color: $color-light-secondary;
+
+                        span{
+                            font-size: 12.7vw;
+                        }
+                    }
+
+                    .caption{
+                        width: 19.27vw;
+                        font-size: 1.3vw;
+                        color: $color-light-secondary;
+                        text-align: right;
+                        margin-top: 6vw;
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            &-bottom{
+                width: 70.72vw;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 1vw;
+                right: -9.89vw;
+
+                &-counter{
+                    width: 36%;
+                    text-align: right;
+                    color: $color-light-primary;
+                    margin-right: 1.82vw;
+
+                    .slides-number{
+                        font-family: $font-secondary;
+                        font-size: 2vw;
+
+                        .devider, .slides-total{
+                            opacity: .5;
+                        }
+                    }
+
+                    .coment{
+                        font-size: 1.35vw;
+                    }
+                }
+
+                &-viewport-2{
+                    width: 64%;
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+
+                    .slide{
+                        width: 13.3vw;
+                        flex-shrink: 0;
+                        margin-right: 1.82vw;
+
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

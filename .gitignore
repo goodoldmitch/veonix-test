@@ -1,2 +1,7 @@
 /node_modules/
 .DS_Store
+/dist/css/fonts.min.css
+/dist/css/hello-section.min.css
+/dist/css/projects-section.min.css
+/dist/css/reset.min.css
+variables.min.css

@@ -11,3 +11,22 @@ $color-light-primary: #DFD5BE;
 $color-light-secondary: #D08D56;
 $color-dark-primary: #383330;
 $color-dark-secondary: #2C3637;
+
+// анимация вверх-вниз
+@mixin scroll-down-animation($distance: 10px, $duration: 1s) {
+    @keyframes scrollDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY($distance);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    & {
+        animation: scrollDown $duration ease-in-out infinite;
+    }
+}

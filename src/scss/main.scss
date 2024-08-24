@@ -1,11 +1,49 @@
 @import 'reset.scss';
 @import 'variables.scss';
+@import 'hello-section.scss';
+@import 'projects-section.scss';
 
+// общие стили
 body{
-    background: $color-dark-secondary;
+    font-family: $font-primary;
+    font-size: 1.19vw;
 }
 
-h1{
-    font-size: 130px;
-    font-family: $font-primary-extrabold;
+section{
+    position: relative;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button{
+    display: inline-block;
+    font-family: $font-primary-medium;
+    font-size: 1.25vw;
+    padding: 1.45vw 3.9vw;
+    color: $color-dark-secondary;
+    background-color: $color-light-primary;
+    border-radius: 6.35vw;
+    transition: all 500ms ease-in-out;
+}
+
+.copyright{
+    position: absolute;
+    left: 3.64vw;
+    bottom: 4.16vw;
+    transform: rotate(-90deg) translateY(50%);
+    transform-origin: left;
+    font-size: 1.04vw;
+    color: $color-light-primary;
+
+    span{
+        display: inline-block;
+        width: 4.58vw;
+        height: 1px;
+        vertical-align: middle;
+        background: $color-light-primary;
+        margin: 0 1.77vw;
+    }
 }

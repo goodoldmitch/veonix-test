@@ -1,0 +1,143 @@
+@import 'variables.scss';
+
+.projects-section{
+    display: flex;
+    background-color: $color-dark-secondary;
+    padding-left: 8.75%;
+
+    &-left{
+        width: 50%;
+        background: $color-dark-primary;
+
+        .slider-main{
+            height: 39.73vw;
+
+            .slide{
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+
+                &.active{
+                    display: block;
+                }
+            }
+        }
+
+        .content{
+            padding: 3.75vw 9.11vw 0 3.33vw;
+
+            h2{
+                font-family: $font-primary-extrabold;
+                font-size: 3.33vw;
+                color: $color-light-primary;
+                text-transform: uppercase;
+            }
+
+            p{
+                color: $color-light-primary;
+                margin-top: 1.25vw;
+                line-height: 1.3;
+            }
+        }
+    }
+    
+    &-right{
+        width: 50%;
+        background: $color-light-primary;
+
+        .slider-plan{
+            overflow: hidden;
+
+            .slide{
+                display: flex;
+                
+
+                img{
+                    width: 50%;
+                }
+            }
+        }
+
+        .slider-content{
+            padding: 3.17vw 2.91vw 0 3.33vw;
+
+            .controls{
+                text-align: right;
+
+                button{
+                    &:first-child{
+                        margin-right: 1.45vw;
+                    }
+
+                    img{
+                        width: 2.29vw;
+                    }
+                }
+            }
+
+            .text-slides{
+
+                .slide{
+                    
+                    h3{
+                        position: relative;
+                        font-family: $font-primary-extrabold;
+                        font-size: 2.5vw;
+                        color: $color-dark-secondary;
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        span{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            font-family: $font-secondary;
+                            font-size: 3.33vw;
+                        }
+                    }
+
+                    .features{
+                        margin-top: 3.64vw;
+
+                        &-row{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-bottom: 1.87vw;
+
+                            &-item{
+                                font-size: 1.66vw;
+                                color: $color-dark-secondary;
+                                margin-right: 3.54vw;
+
+                                &:nth-child(3n){
+                                    margin-right: 0;
+                                }
+
+                                span{
+                                    font-family: $font-secondary;
+                                    font-size: 3.33vw;
+                                    padding-right: 0.7vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .button{
+            width: 100%;
+            text-align: center;
+            background-color: $color-dark-secondary;
+            color: $color-light-primary;
+            margin-top: 1.71vw;
+
+            &:hover{
+                background-color: $color-dark-primary;
+                color: $color-light-secondary;
+            }
+        }
+    }
+}

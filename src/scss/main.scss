@@ -12,6 +12,10 @@ body{
 section{
     position: relative;
     height: 100vh;
+
+    @media (max-width: 1024px) {
+        height: 50vh;
+    }
 }
 
 button {
@@ -27,6 +31,10 @@ button {
     background-color: $color-light-primary;
     border-radius: 6.35vw;
     transition: all 500ms ease-in-out;
+
+    @media (max-width: 414px) {
+        font-size: 2.5vw;
+    }
 }
 
 .copyright{
@@ -37,6 +45,10 @@ button {
     transform-origin: left;
     font-size: 1.04vw;
     color: $color-light-primary;
+
+    @media (max-width: 414px) {
+        font-size: 2vw;
+    }
 
     span{
         display: inline-block;
